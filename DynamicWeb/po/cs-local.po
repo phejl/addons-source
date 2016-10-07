@@ -381,7 +381,7 @@ msgstr "(filtrováno z _MAX_ položek celkem)"
 #: DynamicWeb/dynamicweb.py:2447
 #, python-format
 msgid "(m. %s)"
-msgstr ""
+msgstr "(s. %s)"
 
 #: DynamicWeb/dynamicweb.py:2448
 msgid "(sort by name)"
@@ -519,7 +519,7 @@ msgstr "Popis"
 
 #: DynamicWeb/dynamicweb.py:2485
 msgid "DynamicWeb_report#Help"
-msgstr ""
+msgstr "DynamicWeb_report#Help"
 
 #: DynamicWeb/dynamicweb.py:2486
 msgid "Enclosed By"
@@ -583,7 +583,7 @@ msgstr "Zahrnout mapu místa na stránce míst"
 
 #: DynamicWeb/dynamicweb.py:2502 DynamicWeb/dynamicweb.py:4141
 msgid "Include dates columns on the index pages"
-msgstr ""
+msgstr "Zahrnout sloupce s daty na indexových stránkách"
 
 #: DynamicWeb/dynamicweb.py:2503 DynamicWeb/dynamicweb.py:4149
 msgid "Include a column for parents on the index pages"
@@ -591,7 +591,7 @@ msgstr "Zahrnout sloupec s rodiči na indexových stránkách"
 
 #: DynamicWeb/dynamicweb.py:2504 DynamicWeb/dynamicweb.py:4157
 msgid "Include a column for media path on the index pages"
-msgstr ""
+msgstr "Zahrnout sloupec s cestou k médiu na indexových stránkách"
 
 #: DynamicWeb/dynamicweb.py:2505 DynamicWeb/dynamicweb.py:4145
 msgid "Include a column for partners on the index pages"
@@ -604,7 +604,7 @@ msgstr "Zahrnout mapu na stránkách osob a rodin"
 #: DynamicWeb/dynamicweb.py:2507 DynamicWeb/dynamicweb.py:4091
 msgid "Include half and/ or step-siblings on the individual pages"
 msgstr ""
-"Zahrnout nevlastní a/nebo nemanželské sourozence na jednotlivých stránkách"
+"Zahrnout nevlastní a/nebo nemanželské sourozence na stránkách osob"
 
 #: DynamicWeb/dynamicweb.py:2508 DynamicWeb/dynamicweb.py:4161
 msgid "Include references in indexes"
@@ -780,7 +780,7 @@ msgstr "Rozdělení dětí v SVG stromu"
 
 #: DynamicWeb/dynamicweb.py:2560
 msgid "SVG tree configuration"
-msgstr ""
+msgstr "Konfigurace SVG stromu"
 
 #: DynamicWeb/dynamicweb.py:2561 DynamicWeb/dynamicweb.py:4186
 msgid "SVG tree graph shape"
@@ -940,7 +940,7 @@ msgstr ""
 
 #: DynamicWeb/dynamicweb.py:2602
 msgid "Without name"
-msgstr ""
+msgstr "Bez jména"
 
 #: DynamicWeb/dynamicweb.py:2603
 msgid "Without surname"
@@ -948,7 +948,7 @@ msgstr "Bez příjmení"
 
 #: DynamicWeb/dynamicweb.py:2604
 msgid "Without title"
-msgstr ""
+msgstr "Bez názvu"
 
 #: DynamicWeb/dynamicweb.py:2605
 msgid "Zoom in"
@@ -1067,6 +1067,21 @@ msgid ""
 "URL starting with \"relative://relative.<link>\" are replaced by the "
 "relative URL \"<link>\".\n"
 msgstr ""
+"V této poznámce jsou zpracována následující speciální slova:\n"
+"__SEARCH_FORM__ je nahrazeno vyhledávacím formulářem.\n"
+"__NB_INDIVIDUALS__ je nahrazeno počtem osob.\n"
+"__NB_FAMILIES__ je nahrazeno počtem rodin.\n"
+"__NB_MEDIA__ je nahrazeno počtem mediálních objektů.\n"
+"__NB_SOURCES__ je nahrazeno počtem pramenů.\n"
+"__NB_REPOSITORIES__ je nahrazeno počtem archivů.\n"
+"__NB_PLACES__ je nahrazeno počtem míst.\n"
+"__MEDIA_<gid>__ je nahrazeno médiem s Gramps ID <gid>.\n"
+"__THUMB_<gid>__ je nahrazeno náhledem na médium s Gramps ID <gid>.\n"
+"__EXPORT_DATE__ je nahrazeno aktuálním datem.\n"
+"__GRAMPS_VERSION__ je nahrazeno verzí Gramps.\n"
+"__GRAMPS_HOMEPAGE__ je nahrazeno odkazem na domovskou stránku Gramps.\n"
+"URL začínající \"relative://relative.<link>\" jsou nahrazena relativním "
+"URL \"<link>\".\n"
 
 #: DynamicWeb/dynamicweb.py:3881
 msgid "Report"
@@ -1244,31 +1259,31 @@ msgstr "Zda zahrnovat stránky archivů či nikoli."
 
 #: DynamicWeb/dynamicweb.py:4012
 msgid "Include images and media"
-msgstr ""
+msgstr "Zahrnout obrázky a média"
 
 #: DynamicWeb/dynamicweb.py:4013
 msgid "Whether to include images and media in the web pages"
-msgstr ""
+msgstr "Zda zahrnovat obrázky a média do WWW stránek"
 
 #: DynamicWeb/dynamicweb.py:4017
 msgid "Copy, rename files with an internal Gramps identifier"
-msgstr ""
+msgstr "Zkopírovat, přejmenovat soubory na interní Gramps identifikátor"
 
 #: DynamicWeb/dynamicweb.py:4018
 msgid "Copy, keep file names unchanged"
-msgstr ""
+msgstr "Zkopírovat, ponechat jména souborů nezměněná"
 
 #: DynamicWeb/dynamicweb.py:4019
 msgid "Do not copy, reference existing files"
-msgstr ""
+msgstr "Nekopírovat, odkazovat existující soubory"
 
 #: DynamicWeb/dynamicweb.py:4021
 msgid "Images and media"
-msgstr ""
+msgstr "Obrázky a média"
 
 #: DynamicWeb/dynamicweb.py:4024
 msgid "Whether to make a copy of the media"
-msgstr ""
+msgstr "Zda vytvořit kopii média"
 
 #: DynamicWeb/dynamicweb.py:4027
 msgid "Print the notes type"
@@ -1320,11 +1335,11 @@ msgstr "Zvolte mapovou službu pro vytváření stránek map míst"
 
 #: DynamicWeb/dynamicweb.py:4064
 msgid "Google map API key"
-msgstr ""
+msgstr "API klíč Google map"
 
 #: DynamicWeb/dynamicweb.py:4065
 msgid "The API key used for the Google map"
-msgstr ""
+msgstr "API klíč použitý pro Google mapy"
 
 #: DynamicWeb/dynamicweb.py:4072
 msgid "Advanced"
@@ -1382,7 +1397,7 @@ msgstr "Zda vložit autora pramene do názvu pramene"
 
 #: DynamicWeb/dynamicweb.py:4116
 msgid "Whether to hide the Gramps ID"
-msgstr ""
+msgstr "Zda skrýt Gramps ID"
 
 #: DynamicWeb/dynamicweb.py:4125
 msgid "List"
@@ -1390,52 +1405,53 @@ msgstr "Seznam"
 
 #: DynamicWeb/dynamicweb.py:4126
 msgid "Table"
-msgstr ""
+msgstr "Tabulka"
 
 #: DynamicWeb/dynamicweb.py:4129
 msgid "Default format for the surnames index"
-msgstr ""
+msgstr "Výchozí formát pro rejstřík příjmení"
 
 #: DynamicWeb/dynamicweb.py:4129
 msgid "The default format for the surnames index"
-msgstr ""
+msgstr "Výchozí formát pro rejstřík příjmení"
 
 #: DynamicWeb/dynamicweb.py:4130
 msgid "Default format for the persons index"
-msgstr ""
+msgstr "Výchozí formát pro rejstřík osob"
 
 #: DynamicWeb/dynamicweb.py:4130
 msgid "The default format for the persons index"
-msgstr ""
+msgstr "Výchozí formát pro rejstřík osob"
 
 #: DynamicWeb/dynamicweb.py:4131
 msgid "Default format for the families index"
-msgstr ""
+msgstr "Výchozí formát pro rejstřík rodin"
 
 #: DynamicWeb/dynamicweb.py:4131
 msgid "The default format for the families index"
-msgstr ""
+msgstr "Výchozí formát pro rejstřík rodin"
 
 #: DynamicWeb/dynamicweb.py:4132
 msgid "Default format for the sources index"
-msgstr ""
+msgstr "Výchozí formát pro rejstřík pramenů"
 
 #: DynamicWeb/dynamicweb.py:4132
 msgid "The default format for the sources index"
-msgstr ""
+msgstr "Výchozí formát pro rejstřík pramenů"
 
 #: DynamicWeb/dynamicweb.py:4133
 msgid "Default format for the places index"
-msgstr ""
+msgstr "Výchozí formát pro rejstřík míst"
 
 #: DynamicWeb/dynamicweb.py:4133
 msgid "The default format for the places index"
-msgstr ""
+msgstr "Výchozí formát pro rejstřík míst"
 
 #: DynamicWeb/dynamicweb.py:4142
 msgid ""
 "Whether to include dates columns (birth, death, marriage) on the index pages"
 msgstr ""
+"Zda zahrnout sloupce s daty (narození, úmrtí, svatba) na indexových stránkách"
 
 #: DynamicWeb/dynamicweb.py:4146
 msgid "Whether to include a partners column"
@@ -1447,15 +1463,15 @@ msgstr "Zda zahrnout sloupec rodičů"
 
 #: DynamicWeb/dynamicweb.py:4153
 msgid "Generate a families index page"
-msgstr ""
+msgstr "Generovat index rodin"
 
 #: DynamicWeb/dynamicweb.py:4154
 msgid "Whether to generate an index page for families"
-msgstr ""
+msgstr "Zda generovat indexovou stránku pro rodiny"
 
 #: DynamicWeb/dynamicweb.py:4158
 msgid "Whether to include a column showing the media path"
-msgstr ""
+msgstr "Zda zahrnout sloupec zobrazující cestu k médiu"
 
 #: DynamicWeb/dynamicweb.py:4162
 msgid ""
@@ -1469,11 +1485,11 @@ msgstr ""
 
 #: DynamicWeb/dynamicweb.py:4165
 msgid "Default number of entries in the indexes"
-msgstr ""
+msgstr "Výchozí počet položek v indexech"
 
 #: DynamicWeb/dynamicweb.py:4168
 msgid "The default number of entries shown in one index page"
-msgstr ""
+msgstr "Výchozí počet položek zobrazených v jedné indexové stránce"
 
 #: DynamicWeb/dynamicweb.py:4173
 msgid "Trees"
